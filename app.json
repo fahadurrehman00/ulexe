@@ -1,0 +1,70 @@
+{
+  "expo": {
+    "name": "Ulexe Client",
+    "slug": "ulexe-dev",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/appIcon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "scheme": "ulexeclient",
+    "ios": {
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs access to your location to show your position on the map.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs access to your location to show your position on the map.",
+        "UIBackgroundModes": [
+          "location",
+          "fetch",
+          "remote-notification",
+          "processing"
+        ]
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyD-EOiAoMOL24Fel-XWxd3Rzi-i-qxioTs"
+        }
+      },
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ulexeclient.app",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/appIcon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "versionCode": 1,
+      "package": "com.ulexeclient.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "INTERNET",
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyD7X_czUJZX-WUv0ue5ashKj__wQfZPUG4"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/logo.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2fa6f349-a86c-4264-b10a-89c06602c913"
+      }
+    },
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/2fa6f349-a86c-4264-b10a-89c06602c913"
+    },
+    "owner": "usmani07",
+    "plugins": [
+      "expo-localization"
+    ]
+  }
+}
